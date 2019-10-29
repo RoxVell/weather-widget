@@ -2,7 +2,7 @@
 
 ### Настройка
 1. Зарегистрироваться по [ссылке](https://home.openweathermap.org/users/sign_up)
-2. Получить API KEY
+2. Получить API KEY по [ссылке](https://home.openweathermap.org/api_keys)
 3. Заменить полученный ключ в файле config.json
 
 ### Установка
