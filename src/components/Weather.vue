@@ -97,9 +97,14 @@ export default {
           `https://api.openweathermap.org/data/2.5/weather?id=${id}&APPID=${this.API_KEY}`
         )
 
-        let cityInfo = await city.json()
-        this.cityInfo = cityInfo
+        if (city.status === 200) {
+          let cityInfo = await city.json()
+          this.cityInfo = cityInfo
+        } else if (city.status === 401) {
+          alert('Неверный API ключ')
+        }
       } catch(error) {
+        alert('Ошибка сети')
         console.error(error)
       }
     },
