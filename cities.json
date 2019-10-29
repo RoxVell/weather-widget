@@ -1,0 +1,32 @@
+[
+  {
+    "id": 515012,
+    "name": "Orel",
+    "nameRu": "Орёл",
+    "country": "RU"
+  },
+  {
+    "id": 524901,
+    "name": "Moscow",
+    "nameRu": "Москва",
+    "country": "RU"
+  },
+  {
+    "id": 538560,
+    "name": "Kursk",
+    "nameRu": "Курск",
+    "country": "RU"
+  },
+  {
+    "id": 578072,
+    "name": "Belgorod",
+    "nameRu": "Белгород",
+    "country": "RU"
+  },
+  {
+    "id": 546092,
+    "name": "Kolpny",
+    "nameRu": "Колпна",
+    "country": "RU"
+  }
+]
