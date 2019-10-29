@@ -1,6 +1,7 @@
 <template>
   <div class="weather-component">
     <transition
+      appear
       mode="out-in"
       v-bind:css="false"
       v-on:before-enter="beforeEnter"
@@ -203,7 +204,7 @@ export default {
 }
 
 .weather-component {
-  min-width: 170px;
+  min-width: 180px;
 }
 
 .weather-degrees {
