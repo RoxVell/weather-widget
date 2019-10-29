@@ -1,28 +1,56 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CitiesList :cities="cities" @changeCity="changeCity" />
+    <Weather class="city-wrapper" :city="currentCity" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Weather from './components/Weather.vue'
+import CitiesList from './components/CitiesList.vue'
+import cities from '../cities.json'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CitiesList,
+    Weather
+  },
+  data() {
+    return {
+      cities: cities,
+      currentCity: cities[0]
+    }
+  },
+  methods: {
+    changeCity(city) {
+      this.currentCity = city
+    }
+  },
+  created() {
+    this.cities = cities
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
+.city-wrapper {
+  margin-top: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul { list-style: none; }
 </style>
