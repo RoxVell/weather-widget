@@ -1,5 +1,7 @@
 # Weather widget
 
+![](preview.gif)
+
 ### Настройка
 1. Зарегистрироваться по [ссылке](https://home.openweathermap.org/users/sign_up)
 2. Получить API KEY по [ссылке](https://home.openweathermap.org/api_keys)
