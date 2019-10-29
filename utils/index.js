@@ -1,0 +1,1 @@
+export const kelvinToCelsiusDegrees = (kDegrees) => kDegrees - 273.15
